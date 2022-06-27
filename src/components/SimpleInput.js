@@ -12,6 +12,11 @@ const SimpleInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+
+    if (enteredName.trim() === "") {
+      return;
+    }
+
     // console.log(event);
     console.log(enteredName + " coming from state");
     const enteredValue = nameInputRef.current.value;
