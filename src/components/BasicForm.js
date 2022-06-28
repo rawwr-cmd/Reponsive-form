@@ -1,4 +1,6 @@
-import useInput from "../hooks/useInput";
+// import useInput from "../hooks/useInput";
+import useInput from "../hooks/use-input";
+
 const isEmpty = (value) => value.trim() !== "";
 const isEmail = (value) => value.includes("@");
 
